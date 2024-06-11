@@ -1,8 +1,11 @@
-﻿@{
+﻿@using System;
+
+@{
     ViewData["Title"] = "Home Page";
+    var biddate = DateTime.MaxValue;
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">THIS IS A DEMO FROM devops ci/cd</a></p>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">THIS IS A DEMO FROM devops ci/cd @(biddate)</a></p>
 </div>
